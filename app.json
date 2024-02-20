@@ -1,0 +1,72 @@
+
+{
+  "name": "Source u_2_n",
+  "description": "لتشغيل القران الكريم في المجموعات والقنوات.",
+  "logo": "https://telegra.ph/file/3d4e9709614892e62a969.jpg",
+  "keywords": [
+    "Telegram",
+    "MusicPlayer",
+    "VideoPlayer"
+  ],
+  "repository": "https://github.com/SoRsRR8r9/strong",
+  "env": {
+    "SESSION": {
+      "description": "اكتب هنا كود بايروجرام",
+      "required": true
+    },
+    "API_ID": {
+      "description": "ايبي ايدي",
+      "required": true,
+      "value": ""
+    },
+    "HNDLR": {
+      "description": " لاتغيرها ابدا ياملقوف .",
+      "required": false,
+      "value": "!"
+    },
+    "API_HASH": {
+      "description": "ايبي هاش",
+      "required": true,
+      "value": ""
+    },
+    "SUDO_USERS": {
+      "description": "اكتب ايدي المطور ",
+      "required": true,
+      "value": ""
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-google-chrome"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-chromedriver"
+    },
+    {
+      "url": "https://github.com/riganf/heroku-buildpack-p7zip"
+    },
+    {
+      "url": "https://github.com/rahulps1000/heroku-buildpack-nodejs"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+    },
+    {
+      "url": "https://github.com/chrismytton/heroku-buildpack-"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "stack": "container"
+}
